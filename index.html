@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <meta property="og:site_name" content="Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control" />
+  <meta property="og:title" content="Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control" />
+</head>
+
+
+<body>
+  <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+    <div class="hero-video" style="height: 100%; width: 177.77777778vh; min-width: 100%;min-height: 56.25vw;">
+      <video playsinline autoplay muted loop>
+        <source src="./resources/hold-my-beer-header-dark.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-video is-hidden-tablet is-inline-block-mobile"
+      style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
+      <video playsinline autoplay muted loop>
+        <source src="./resources/hold-my-beer-header-dark.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <!-- Hero head: will stick at the top -->
+   
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+          Hold My Beer🍻
+        </h1>
+        <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 4rem;">
+          Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control
+        </h1>
+        <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 2rem;">
+          In Submission
+        </h1>
+        <div class="column has-text-centered is-hidden-tablet">
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+              <a href="./resources/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="./static/images/pdf.svg" alt="PDF" />
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="./static/images/arxiv.svg" alt="ArXiv" />
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Hero footer: will stick at the bottom -->
+  </section>
+
+<section class="section"></section>
+
+<h2 class="title is-2" style="text-align: center;">Our Approach</h2>
+<section class="section">
+  <div class="container" style="width:50%;">
+    <div class="columns is-centered">
+      <img src="./resources/approach.png" ></img>
+    </div>
+    <p>
+      <!-- add red/bold to SoFTA -->
+       <!-- 2-5x relative to baselines, much closer to human-level stability bold -->
+      Can your humanoid walk up and hand you a <span style="color:#b36b00; font-weight:bold;">full cup of beer</span>—without spilling a drop? While humanoids are increasingly featured in flashy demos—dancing, delivering packages, traversing rough terrain—fine-grained control during locomotion remains a significant challenge. In particular, stabilizing a filled end-effector (EE) while walking is far from solved, due to a fundamental mismatch in task dynamics: locomotion demands slow-timescale, robust control, whereas EE stabilization requires rapid, high-precision corrections. To address this, we propose <span style="color: rgb(200, 5, 5); font-weight: bold;">SoFTA</span>, a <span style="color: rgb(200, 5, 5); font-weight: bold;">S</span>l<span style="color: rgb(200, 5, 5); font-weight: bold;">o</span>w-<span style="color: rgb(200, 5, 5); font-weight: bold;">F</span>ast <span style="color: rgb(200, 5, 5); font-weight: bold;">T</span>wo<span style="color: rgb(200, 5, 5); font-weight: bold;">A</span>gent framework that decouples upper-body and lower-body control into separate agents operating at different frequencies and with distinct rewards. This temporal and objective separation mitigates policy interference and enables coordinated whole-body behavior. <span style="color: rgb(200, 5, 5); font-weight: bold;">SoFTA</span> executes upper-body actions at <span style="color:#c29400; font-weight:bold;">100 Hz</span> for precise EE control and lower-body actions at <span style="color:#0082c4; font-weight:bold;">50 Hz</span> for robust gait. It reduces EE acceleration by <span style="font-weight: bold;"">2-5x relative to baselines </span>and performs <span style="font-weight: bold;">much closer to human-level stability</span>, enabling delicate tasks such as carrying nearly full cups, capturing steady video during locomotion, and disturbance rejection with EE stability.
+    </p>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Disturbance Rejection with EE Stability</h2>
+  <h2 class="title is-5" style="text-align: center;">Right Hand 🟥 with ours stabilization control, Left Hand 🟨 w/o ours stabilization control</h2>
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/hold-my-beer-push-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/hold-my-beer-push-2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/hold-my-beer-push-3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Humanoid Carrying Bottle without Spillage</h2>
+  <h2 class="title is-5" style="text-align: center;">Right Hand 🟥 with ours stabilization control, Left Hand 🟨 w/o ours stabilization control</h2>
+
+  <div class="container"><!-- Row 1 -->
+
+    <div class="columns is-centered">
+
+
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/default-controller.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Default Controller</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/hold-my-beer-tapping-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Tapping in place with large gait period</p>
+      </div>
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/hold-my-beer-tapping-2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Tapping in place with large gait period (another view)</p>
+      </div>
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/hold-my-beer-tapping-3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Tapping in place with small gait period</p>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="columns is-centered is-vcentered" style="gap: 10px;">
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/hold-my-beer-turning-1.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p>Turning in place</p>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/hold-my-beer-walking-1.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p>Walking + slight turn</p>
+      </div>
+    </div>
+    
+    
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- create a section for figure 2 -->
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Long exposure photos</h2>
+  <h2 class="title is-5" style="text-align: center;">Right Hand 🟨 with our stabilization control, Left Hand 🟪 w/o our stabilization control</h2>
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <img src="./resources/long-exposure-photo-1.JPG" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <p>Turning</p>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <img src="./resources/long-exposure-photo-2.JPG" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <p>Go forward (1)</p>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <img src="./resources/long-exposure-photo-3.JPG" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+        <p>Go forward (2)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Humanoid as Camera Stabilizer</h2>
+  <div class="container" style="width: 40%;">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/hold-my-beer-camera-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Our Method Also works for Other Robot</h2>
+  <!-- <h2 class="title is-4" style="text-align: center;">Coke 🟫 with ours stabilization control, Fanta 🟥 w/o ours stabilization control</h2> -->
+  <div class="container" style="width: 30%;">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/t1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Coke 🟫 with ours stabilization control, Fanta 🟥 w/o ours stabilization control</p>
+      </div>
+      
+      <!-- <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/t1-default.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p> Default controller </p>
+      </div> -->
+
+    </div>
+  </div>
+  
+</section>
+
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Simulation Results</h2>
+  <!-- <h2 class="title is-5" style="text-align: center;">Right Hand 🟥 with ours stabilization control, Left Hand 🟨 w/o ours stabilization control</h2> -->
+
+  
+  <div class="columns is-centered is-vcentered" style="gap: 10px;">
+    <div class="column has-text-centered is-narrow">
+      <video controls autoplay loop muted playsinline
+        src="./resources/hold-my-beer-sim-g1-1.mp4"
+        poster="./resources/loading-icon.gif"
+        style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+      </video>
+      <p>Unitree G1 backward</p>
+    </div>
+
+    <div class="column has-text-centered is-narrow">
+      <video controls autoplay loop muted playsinline
+        src="./resources/hold-my-beer-sim-g1-3.mp4"
+        poster="./resources/loading-icon.gif"
+        style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+      </video>
+      <p>Unitree G1 tapping</p>
+    </div>
+
+    <div class="column has-text-centered is-narrow">
+      <video controls autoplay loop muted playsinline
+        src="./resources/hold-my-beer-sim-g1-4.mp4"
+        poster="./resources/loading-icon.gif"
+        style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+      </video>
+      <p>Compensation behavior in Unitree G1 forward</p>
+    </div>
+    <div class="column has-text-centered is-narrow">
+      <video controls autoplay loop muted playsinline
+        src="./resources/hold-my-beer-sim-t1-1.mp4"
+        poster="./resources/loading-icon.gif"
+        style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+      </video>
+      <p>Booster T1</p>
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template modified from incredible <a href="#">UMI-On-Legs</a>, <a href="#">NeRFies</a>, and <a href="#">Scaling Up Distilling Down</a>.
+          </p>
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow and modify the <a href="#">source
+              code</a> of this website as long as
+            you link back to the <a href="#">NeRFies</a> page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

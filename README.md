@@ -14,7 +14,7 @@
 [![IsaacGym](https://img.shields.io/badge/IsaacGym-Preview4-b.svg)](https://developer.nvidia.com/isaac-gym) [![Linux platform](https://img.shields.io/badge/Platform-linux--64-orange.svg)](https://ubuntu.com/blog/tag/22-04-lts) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 
 
-<img src="assets/intro.gif" width="100%"/>
+<img src="assets/intro.gif" width="75%"/>
 
 </div>
 

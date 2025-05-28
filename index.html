@@ -181,6 +181,7 @@
 
 <section class="section">
   <h2 class="title is-2" style="text-align: center;">Disturbance Rejection with EE Stability</h2>
+  <h2 class="title is-3" style="text-align: center;">Under Fierce Push</h2>
   <h2 class="title is-5" style="text-align: center;">Right Hand 🟥 with ours stabilization control, Left Hand 🟨 w/o ours stabilization control</h2>
   <div class="container">
 
@@ -196,11 +197,48 @@
       </div>
     </div>
   </div>
+  <br>
+<h2 class="title is-3" style="text-align: center;">Under Fierce Shake</h2>
+  <div class="columns is-centered is-vcentered" style="gap: 10px;">
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/chips-shake-baseline.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 300px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p> w/o ours stabilization control </p>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/chips-shake-ours.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 300px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p> with ours stabilization control </p>
+      </div>
+        <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/chips-shake-compare.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 300px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p> A fair comparison </p>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/chips-shake-compensation.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 300px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p> More clear compensation behavior </p>
+      </div>
+    </div>
+
 </section>
 
 <section class="section">
   <h2 class="title is-2" style="text-align: center;">Humanoid Carrying Bottle without Spillage</h2>
-  <h2 class="title is-5" style="text-align: center;">Right Hand 🟥 with ours stabilization control, Left Hand 🟨 w/o ours stabilization control</h2>
+
 
   <div class="container"><!-- Row 1 -->
 
@@ -212,6 +250,7 @@
         <p>Default Controller</p>
       </div>
     </div>
+      <h2 class="title is-5" style="text-align: center;">Right Hand 🟥 with ours stabilization control, Left Hand 🟨 w/o ours stabilization control</h2>
     <div class="columns is-centered">
 
       <div class="column has-text-centered">
@@ -247,14 +286,38 @@
         <p>Walking + slight turn</p>
       </div>
     </div>
-    
-    
-
-
     </div>
   </div>
 </section>
 
+
+<section class="section">
+  <h2 class="title is-2" style="text-align: center;">Humanoid Carrying a Plate of Chips without Spillage</h2>
+  <div class="container"><!-- Row 1 -->
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/chips-baseline-tapping.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>w/o ours(tapping)</p>
+      </div>
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/chips-baseline-fw.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>w/o ours(slightly forward)</p>
+      </div>
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/chips-ours-tepping.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Ours(tapping)</p>
+      </div>
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/chips-ours-fw.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Ours(slightly forward)</p>
+      </div>
+      <div class="column has-text-centered">
+        <video width="500" height="auto" controls autoplay loop muted playsinline src="./resources/chips-ours-sudden-start.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p>Ours(sudden start)</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- create a section for figure 2 -->
 <section class="section">
@@ -293,18 +356,56 @@
 <section class="section">
   <h2 class="title is-2" style="text-align: center;">Our Method Also works for Other Robot</h2>
   <!-- <h2 class="title is-4" style="text-align: center;">Coke 🟫 with ours stabilization control, Fanta 🟥 w/o ours stabilization control</h2> -->
-  <div class="container" style="width: 30%;">
-    <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/t1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p>Coke 🟫 with ours stabilization control, Fanta 🟥 w/o ours stabilization control</p>
+    <div class="columns is-centered is-vcentered" style="gap: 10px;">
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/t1-walking1-1.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p>Walk toward the windowsill and then turn</p>
       </div>
-      
-      <!-- <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/t1-default.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p> Default controller </p>
-      </div> -->
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/t1-turning-1.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p>Circle around</p>
+      </div>
+    </div>
 
+    <div class="columns is-centered is-vcentered" style="gap: 10px;">
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/t1-elevator-1(1).mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p>Step out of the elevator sideways</p>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline
+          src="./resources/handover-1.mp4"
+          poster="./resources/loading-icon.gif"
+          style="height: 250px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;">
+        </video>
+        <p>Handover</p>
+      </div>
+    </div>
+    <h2 class="title is-4" style="text-align: center;">Comparison: Coke 🟫 with ours stabilization control, Fanta 🟥 w/o ours stabilization control</h2>
+    <div class="columns is-centered is-vcentered" style="gap: 10px;">
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline 
+        src="./resources/t1.mp4" 
+        poster="./resources/loading-icon.gif" 
+        style="height: 300px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;"></video>
+        <p> Ours (with or w/o stabilization controller) </p>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <video controls autoplay loop muted playsinline src="./resources/t1-default.mp4" poster="./resources/loading-icon.gif" style="height: 300px; width: auto; border: 1px solid #bbb; border-radius: 10px; margin: 0.5%;"></video>
+        <p> Default controller </p>
+      </div>
     </div>
   </div>
   

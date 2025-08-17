@@ -85,7 +85,7 @@ pip install -e isaac_utils
 <summary>Training Command</summary>
 
 ```bash
-python humanoidverse/train_agent.py +exp=g1_async_locomotion_ma_stand_gait_ee_rrh simulator.config.sim.control_decimation=2 +opt=wandb
+python humanoidverse/train_agent.py +exp=async_locomotion_ma_stand_gait_ee_rrh simulator.config.sim.control_decimation=2 +opt=wandb
 ```
 
 </details>

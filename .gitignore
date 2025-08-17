@@ -60,10 +60,6 @@ AMASS/*
 
 *.sh
 *.txt
-TairanTestbed_0109_checkpoints/
-TairanTestbed_0109_eval_g129dof_anneal_23dof_checkpoints_20250112_1853
-TairanTestbed_0109_eval_g129dof_anneal_23dof_checkpoints_20250113_1731
-TairanTestbed_0109_eval_g129dof_anneal_23dof_checkpoints
 *.zip
 
 *.jpg

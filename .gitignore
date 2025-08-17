@@ -73,10 +73,5 @@ TairanTestbed_0109_eval_g129dof_anneal_23dof_checkpoints
 test.py
 
 *.npz
-isaacgym
-pinocchio
-mjstabilizer
-mjstabilizer_old
 rosidl_runtime_py
-sim2real_zyh
-sim2real_T1
+

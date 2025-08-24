@@ -107,7 +107,7 @@ python humanoidverse/eval_agent.py +checkpoint=<path_to_your_ckpt>
  - press upper/lower arrow to control the EE z pos
  - press left/right arrow to control the EE y pos
  - press page up/down to control the EE x pos
- - press page b/v to control the gait period
+ - press page 1/2 to control the gait period
 
 </details>
 
